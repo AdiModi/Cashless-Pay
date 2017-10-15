@@ -9,10 +9,14 @@ import io.vertx.core.Future;
 import io.vertx.core.json.JsonObject;
 import org.glassfish.hk2.api.ServiceLocator;
 import org.glassfish.hk2.utilities.ServiceLocatorUtilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 
 public class ITCanteenServer extends AbstractVerticle {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(ITCanteenServer.class);
 
     private JsonObject configJson, jerseyConfig;
 

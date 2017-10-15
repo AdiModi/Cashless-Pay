@@ -9,18 +9,22 @@ import io.vertx.core.Future;
 import io.vertx.core.json.JsonObject;
 import org.glassfish.hk2.api.ServiceLocator;
 import org.glassfish.hk2.utilities.ServiceLocatorUtilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 
-public class panServer extends AbstractVerticle {
+public class PanServer extends AbstractVerticle {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(PanServer.class);
 
     private JsonObject configJson, jerseyConfig;
 
-    public panServer() {
-        this("D:\\Codes\\Cashless-Pay\\src\\main\\resources\\panServerConfig.json");
+    public PanServer() {
+        this("D:\\Codes\\Cashless-Pay\\src\\main\\resources\\PanServerConfig.json");
     }
 
-    public panServer(String configFilePath) {
+    public PanServer(String configFilePath) {
         this.configJson = new JsonFileReader().readJson(new File(configFilePath));
         if (this.configJson == null) {
             System.out.println("Error Reading Config File");

@@ -1,0 +1,6 @@
+{
+  "verticlesToDeploy": [
+    "pan.verticles.PanServer"
+    /*"itCanteen.verticles.ITCanteenServer"*/
+  ]
+}
