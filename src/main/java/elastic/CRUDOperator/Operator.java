@@ -15,6 +15,4 @@ class Operator {
         LOGGER.info("Getting The Singleton Transport Client");
         restHighLevelClient = Client.getClient();
     }
-
-
 }

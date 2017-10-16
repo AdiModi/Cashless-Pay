@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="813b4edd-425c-4e58-a8c4-cb8389679a10" name="Default" comment="After Setting Logger">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Fingerprint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Transaction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Users/Staff.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Users/Student.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Users/Vendors.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/elastic/CRUDOperator/Operator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ElasticConfig.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ServerDeployer.class" afterPath="$PROJECT_DIR$/target/classes/ServerDeployer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/elastic/AdminOperator/Operator.class" afterPath="$PROJECT_DIR$/target/classes/elastic/AdminOperator/Operator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/elastic/Client.class" afterPath="$PROJECT_DIR$/target/classes/elastic/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/itCanteen/verticles/ITCanteenServer.class" afterPath="$PROJECT_DIR$/target/classes/itCanteen/verticles/ITCanteenServer.class" />
+    <list default="true" id="813b4edd-425c-4e58-a8c4-cb8389679a10" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ServerDeployer.java" afterPath="$PROJECT_DIR$/src/main/java/ServerDeployer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/elastic/AdminOperator/Operator.java" afterPath="$PROJECT_DIR$/src/main/java/elastic/AdminOperator/Operator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/elastic/Client.java" afterPath="$PROJECT_DIR$/src/main/java/elastic/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/elastic/CRUDOperator/Operator.java" afterPath="$PROJECT_DIR$/src/main/java/elastic/CRUDOperator/Operator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,8 +23,8 @@
       <file leaf-file-name="Operator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/elastic/CRUDOperator/Operator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,11 +35,9 @@
       <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dataModels/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,15 +46,14 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/dataModels/Fingerprint.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="481">
-              <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+              <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#803#804#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,7 +140,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/ElasticConfig.json" />
         <option value="$PROJECT_DIR$/src/main/java/elastic/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/elastic/AdminOperator/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/elastic/CRUDOperator/Operator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataModels/Fingerprint.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataModels/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataModels/Transaction.java" />
@@ -164,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/main/java/dataModels/Users/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataModels/Users/Vendors.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataModels/Users/Staff.java" />
+        <option value="$PROJECT_DIR$/src/main/java/elastic/CRUDOperator/Operator.java" />
       </list>
     </option>
   </component>
@@ -1051,7 +1035,7 @@
       <workItem from="1508091150530" duration="1051000" />
       <workItem from="1508092271433" duration="8677000" />
       <workItem from="1508122261503" duration="8866000" />
-      <workItem from="1508142521421" duration="6113000" />
+      <workItem from="1508142521421" duration="6979000" />
     </task>
     <task id="LOCAL-00001" summary="The initial Commit message after resolving all the dependency problems">
       <created>1508095312565</created>
@@ -1088,11 +1072,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508130191263</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Introducing Data Models">
+      <created>1508170164829</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1508170164829</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87956000" />
+    <option name="totallyTimeSpent" value="88822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1144,7 +1135,8 @@
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="The initial Commit message after resolving all the dependency problems" />
     <MESSAGE value="After Setting Logger" />
-    <option name="LAST_COMMIT_MESSAGE" value="After Setting Logger" />
+    <MESSAGE value="Introducing Data Models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Introducing Data Models" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1463,6 +1455,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1569,15 +1562,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/dataModels/Fingerprint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
-          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1587,7 +1579,7 @@
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1610,11 +1602,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dataModels/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1628,8 +1618,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/elastic/CRUDOperator/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
