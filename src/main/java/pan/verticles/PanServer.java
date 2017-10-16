@@ -27,7 +27,8 @@ public class PanServer extends AbstractVerticle {
     public PanServer(String configFilePath) {
         this.configJson = new JsonFileReader().readJson(new File(configFilePath));
         if (this.configJson == null) {
-            System.out.println("Error Reading Config File");
+            LOGGER.error("Reading Config File, Quitting");
+            System.exit(1);
         }
         try {
             this.jerseyConfig = this.configJson.getJsonObject("jerseyConfig");
