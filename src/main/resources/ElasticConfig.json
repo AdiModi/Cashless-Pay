@@ -1,0 +1,8 @@
+{
+  "httpHosts": [
+    {
+      "host": "localhost",
+      "port": 9200
+    }
+  ]
+}

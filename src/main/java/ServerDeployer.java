@@ -33,9 +33,10 @@ public class ServerDeployer {
             LOGGER.info("Deploying {} verticle...", verticlesToDeploy.getString(i));
             vertx.deployVerticle(verticlesToDeploy.getString(i), stringAsyncResult -> {
                 if (stringAsyncResult.succeeded()) {
-                    System.out.println("Deployment id is: " + stringAsyncResult.result());
+                    LOGGER.info("Deployment of verticle successful with id: {}", stringAsyncResult.result());
                 } else {
-                    System.out.println("Deployment failed!");
+                    LOGGER.error("Deployment failed!");
+                    System.out.println(stringAsyncResult.cause());
                 }
             });
         }

@@ -1,11 +1,11 @@
-package elastic.AdminOperator;
+package elastic.CRUDOperator;
 
 import elastic.Client;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Operator {
+class Operator {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Operator.class);
 
@@ -16,5 +16,5 @@ public class Operator {
         restHighLevelClient = Client.getClient();
     }
 
-    /*Create Functions here for Admin Operations*/
+
 }
