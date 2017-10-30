@@ -1,17 +1,16 @@
 package dataModels.Users;
 
+import dataModels.Date;
 import dataModels.Fingerprint;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Student {
 
     @Getter
-    @Setter
-    private String firstName, middleName, lastName, rollNo;
+    private String firstName, middleName, lastName;
     @Getter
     @Setter
     private Date dateOfBirth;
@@ -21,4 +20,16 @@ public class Student {
     @Getter
     @Setter
     private Fingerprint fingerprint;
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName.toLowerCase();
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName.toLowerCase();
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName.toLowerCase();
+    }
 }

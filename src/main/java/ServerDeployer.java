@@ -20,7 +20,7 @@ public class ServerDeployer {
         jsonFileReader = new JsonFileReader();
         configJson = jsonFileReader.readJson(new File("D:\\Codes\\Cashless-Pay\\src\\main\\resources\\ServerDeployer.json"));
         if (configJson == null) {
-            LOGGER.error("Reading Config File, Quitting");
+            LOGGER.error("Error Reading Config File, Quitting");
             System.exit(1);
         }
     }

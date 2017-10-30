@@ -25,7 +25,7 @@ public class Client {
 
         configJson = new JsonFileReader().readJson(new File(configFilePath));
         if (configJson == null) {
-            LOGGER.error("Reading Config File, Quitting");
+            LOGGER.error("Error Reading Config File, Quitting");
             System.exit(1);
         }
 
