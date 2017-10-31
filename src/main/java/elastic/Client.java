@@ -1,5 +1,6 @@
 package elastic;
 
+import constants.ResourcesPath;
 import generics.JsonFileReader;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
@@ -16,7 +17,7 @@ public class Client {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Client.class);
 
-    private static String configFilePath = "D:\\Codes\\Cashless-Pay\\src\\main\\resources\\ElasticConfig.json";
+    private static String configFilePath = ResourcesPath.Configs.FILE_ELASTIC_CONFIG_PATH;
     private static Client client = null;
     private static JsonObject configJson;
     private RestHighLevelClient restHighLevelClient;
@@ -25,7 +26,7 @@ public class Client {
 
         configJson = new JsonFileReader().readJson(new File(configFilePath));
         if (configJson == null) {
-            LOGGER.error("Error Reading Config File, Quitting");
+            LOGGER.error("Error Reading Config File, Quitting!");
             System.exit(1);
         }
 
@@ -38,7 +39,7 @@ public class Client {
 
         RestClientBuilder restClientBuilder = RestClient.builder(httpHosts);
         restHighLevelClient = new RestHighLevelClient(restClientBuilder);
-        LOGGER.info("Client Instance Created!");
+        LOGGER.info("Singleton Client Instance Created!");
     }
 
     public static synchronized RestHighLevelClient getClient() {

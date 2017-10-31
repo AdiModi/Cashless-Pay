@@ -3,6 +3,7 @@ package pan.verticles;
 import com.englishtown.vertx.hk2.HK2JerseyBinder;
 import com.englishtown.vertx.hk2.HK2VertxBinder;
 import com.englishtown.vertx.jersey.JerseyServer;
+import constants.ResourcesPath;
 import generics.JsonFileReader;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
@@ -21,20 +22,20 @@ public class PanServer extends AbstractVerticle {
     private JsonObject configJson, jerseyConfig;
 
     public PanServer() {
-        this("D:\\Codes\\Cashless-Pay\\src\\main\\resources\\PanServerConfig.json");
+        this(ResourcesPath.Configs.FILE_PAN_SERVER_CONFIG_PATH);
     }
 
     public PanServer(String configFilePath) {
         this.configJson = new JsonFileReader().readJson(new File(configFilePath));
         if (this.configJson == null) {
-            LOGGER.error("Reading Config File, Quitting");
+            LOGGER.error("Error Reading Config File, Quitting!");
             System.exit(1);
         }
         try {
             this.jerseyConfig = this.configJson.getJsonObject("jerseyConfig");
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("Error Reading Jersey Configuration");
+            LOGGER.error("Error Reading Jersey Config File, Quitting!");
         }
     }
 
@@ -48,6 +49,7 @@ public class PanServer extends AbstractVerticle {
             ServiceLocator serviceLocator = ServiceLocatorUtilities.bind(new HK2JerseyBinder(), new HK2VertxBinder(vertx));
             JerseyServer jerseyServer = serviceLocator.getService(JerseyServer.class);
 
+            LOGGER.info("Staring Jersey Server for {}", PanServer.class.getCanonicalName());
             jerseyServer.start();
         });
     }

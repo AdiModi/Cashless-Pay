@@ -1,5 +1,6 @@
 package dataModels;
 
+import constants.ResourcesPath;
 import generics.JsonFileReader;
 import io.vertx.core.json.JsonObject;
 import lombok.Getter;
@@ -17,9 +18,9 @@ public class Date {
     private static JsonObject configJson;
 
     static {
-        configJson = new JsonFileReader().readJson(new File("D:\\Codes\\Cashless-Pay\\src\\main\\resources\\DateConfig.json"));
+        configJson = new JsonFileReader().readJson(new File(ResourcesPath.Configs.FILE_DATE_CONFIG_PATH));
         if (configJson == null) {
-            LOGGER.error("Reading Config File, Quitting");
+            LOGGER.error("Error Reading Config File, Quitting!");
             System.exit(1);
         }
     }

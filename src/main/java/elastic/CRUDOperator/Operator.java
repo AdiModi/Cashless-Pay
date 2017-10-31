@@ -23,25 +23,15 @@ class Operator {
     private Gson gson;
 
     public Operator() {
-        LOGGER.info("Getting The Singleton Client");
+        LOGGER.info("Getting The Singleton Client...");
         gson = new Gson();
         restHighLevelClient = Client.getClient();
     }
 
-    public static void main(String[] args) {
-        Operator operator = new Operator();
-        /*Student student = new Student();
-        student.setFirstName("Aditya");
-        student.setMiddleName("Girish");
-        student.setLastName("Modi");
-        student.setDateOfBirth(new Date(new java.util.Date().getDay(), new java.util.Date().getMonth(), new java.util.Date().getYear()));
-        student.setTransactionID(new ArrayList<>());
-        student.setFingerprint(new Fingerprint(new boolean[28 * 28]));
-        System.out.println(operator.gson.toJson(student));*/
-        operator.GET("cashless-pay-elastic", "students", "14BCE002");
-    }
-
     public GetResponse GET(String index, String type, String id) {
+
+        LOGGER.info("GET Request Received...");
+
         GetRequest getRequest = new GetRequest();
         GetResponse getResponse = null;
         if (index == null || type == null || id == null) {
@@ -52,15 +42,15 @@ class Operator {
         getRequest.id(id.toLowerCase());
         try {
             getResponse = restHighLevelClient.get(getRequest);
+            LOGGER.info("GET Request Successfully Executed");
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            System.out.println(getResponse);
             return getResponse;
         }
     }
 
-    public SearchResponse SEARCH(String indices, String type, String[] columns) {
+    public SearchResponse SEARCH(String indices, String type, String[] fields) {
         QueryBuilder queryBuilder = QueryBuilders.boolQuery();
 
         SearchRequest searchRequest = new SearchRequest();

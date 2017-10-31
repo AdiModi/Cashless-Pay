@@ -1,3 +1,4 @@
+import constants.ResourcesPath;
 import generics.JsonFileReader;
 import io.vertx.core.Vertx;
 import io.vertx.core.json.JsonArray;
@@ -18,9 +19,9 @@ public class ServerDeployer {
 
     static {
         jsonFileReader = new JsonFileReader();
-        configJson = jsonFileReader.readJson(new File("D:\\Codes\\Cashless-Pay\\src\\main\\resources\\ServerDeployer.json"));
+        configJson = jsonFileReader.readJson(new File(ResourcesPath.Configs.FILE_SERVER_DEPLOYER_CONFIG_PATH));
         if (configJson == null) {
-            LOGGER.error("Error Reading Config File, Quitting");
+            LOGGER.error("Error Reading Config File, Quitting!");
             System.exit(1);
         }
     }

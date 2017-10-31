@@ -15,7 +15,7 @@ public class RegisterStudent {
 
     @GET
     @Path("/register-student")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public String registerStudent() {
         return "Student Successfully Registered";
     }
