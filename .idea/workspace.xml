@@ -1,40 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="813b4edd-425c-4e58-a8c4-cb8389679a10" name="Default" comment="This is the final commit after which the team can branch out and can contribute respectively">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_auth_common_3_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_web_3_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cash/verticles/CashVerticle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Time/Date.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Time/DateBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Time/ServerLocalDateTime.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Time/TimeOfDay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Time/TimeOfDayBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Time/Timestamp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Users/Visitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/configs/ITCanteenVerticleConfig.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/dataModels/Date.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/configs/DateConfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/configs/ElasticClientConfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/itCanteen/verticles/ITCanteenServer.class" afterPath="" />
+    <list default="true" id="813b4edd-425c-4e58-a8c4-cb8389679a10" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ServerDeployer.class" afterPath="$PROJECT_DIR$/target/classes/ServerDeployer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/generics/CookieGenerator.class" afterPath="$PROJECT_DIR$/target/classes/generics/CookieGenerator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cashless-Pay.iml" afterPath="$PROJECT_DIR$/Cashless-Pay.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/constants/ResourcesPath.java" afterPath="$PROJECT_DIR$/src/main/java/constants/ResourcesPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataModels/Fingerprint.java" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Fingerprint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataModels/Transaction.java" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Transaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataModels/Users/Staff.java" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Users/Staff.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataModels/Users/Student.java" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Users/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/elastic/CRUDOperator/Operator.java" afterPath="$PROJECT_DIR$/src/main/java/elastic/CRUDOperator/Operator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/generics/CookieGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/generics/CookieGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/configs/ServerDeployer.json" afterPath="$PROJECT_DIR$/src/main/resources/configs/ServerDeployer.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dataModels/Users/Vendors.java" afterPath="$PROJECT_DIR$/src/main/java/dataModels/Users/Vendor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/itCanteen/verticles/ITCanteenServer.java" afterPath="$PROJECT_DIR$/src/main/java/itCanteen/verticles/ITCanteenVerticle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/pan/verticles/PanServer.java" afterPath="$PROJECT_DIR$/src/main/java/pan/verticles/PanVerticle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/configs/ITCanteenServerConfig.json" afterPath="$PROJECT_DIR$/src/main/resources/configs/CashVerticleConfig.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/configs/PanServerConfig.json" afterPath="$PROJECT_DIR$/src/main/resources/configs/PanVerticleConfig.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1234,7 +1204,7 @@
       <workItem from="1510814749043" duration="36000" />
       <workItem from="1510890779810" duration="4676000" />
       <workItem from="1511015978218" duration="1384000" />
-      <workItem from="1511281656501" duration="125000" />
+      <workItem from="1511281656501" duration="180000" />
     </task>
     <task id="LOCAL-00001" summary="The initial Commit message after resolving all the dependency problems">
       <created>1508095312565</created>
@@ -1299,11 +1269,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509472372300</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Change the IP representation Format">
+      <created>1511281834935</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1511281834935</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149259000" />
+    <option name="totallyTimeSpent" value="149314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1358,7 +1335,8 @@
     <MESSAGE value="Introducing Data Models" />
     <MESSAGE value="Before Idea Lab Commit" />
     <MESSAGE value="This is the final commit after which the team can branch out and can contribute respectively" />
-    <option name="LAST_COMMIT_MESSAGE" value="This is the final commit after which the team can branch out and can contribute respectively" />
+    <MESSAGE value="Change the IP representation Format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the IP representation Format" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
