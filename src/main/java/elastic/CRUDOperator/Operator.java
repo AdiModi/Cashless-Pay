@@ -8,8 +8,8 @@ import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.index.query.QueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.aggregations.AggregationBuilder;
+import org.elasticsearch.search.sort.SortBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -50,8 +50,8 @@ class Operator {
         }
     }
 
-    public SearchResponse SEARCH(String indices, String type, String[] fields) {
-        QueryBuilder queryBuilder = QueryBuilders.boolQuery();
+    public SearchResponse SEARCH(String indices, String type, String[] fields, String[] fieldNames, String[] fieldValues, AggregationBuilder aggregationBuilder, SortBuilder sortBuilder, Long size) {
+        /*QueryBuilder queryBuilder = QueryBuilders.??();*/
 
         SearchRequest searchRequest = new SearchRequest();
         searchRequest.indices(indices);

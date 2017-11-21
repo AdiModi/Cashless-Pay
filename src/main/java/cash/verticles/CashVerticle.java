@@ -1,4 +1,4 @@
-package itCanteen.verticles;
+package cash.verticles;
 
 import com.englishtown.vertx.hk2.HK2JerseyBinder;
 import com.englishtown.vertx.hk2.HK2VertxBinder;
@@ -15,17 +15,17 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 
-public class ITCanteenServer extends AbstractVerticle {
+public class CashVerticle extends AbstractVerticle {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ITCanteenServer.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(CashVerticle.class);
 
     private JsonObject configJson, jerseyConfig;
 
-    public ITCanteenServer() {
-        this(ResourcesPath.Configs.FILE_IT_CANTEEN_SERVER_CONFIG_PATH);
+    public CashVerticle() {
+        this(ResourcesPath.Configs.FILE_CASH_VERTICLE_CONFIG_PATH);
     }
 
-    public ITCanteenServer(String configFilePath) {
+    public CashVerticle(String configFilePath) {
         this.configJson = new JsonFileReader().readJson(new File(configFilePath));
         if (this.configJson == null) {
             LOGGER.error("Error Reading Config File, Quitting!");
@@ -48,7 +48,7 @@ public class ITCanteenServer extends AbstractVerticle {
 
             ServiceLocator serviceLocator = ServiceLocatorUtilities.bind(new HK2JerseyBinder(), new HK2VertxBinder(vertx));
             JerseyServer jerseyServer = serviceLocator.getService(JerseyServer.class);
-            LOGGER.info("Staring Jersey Server for {}", ITCanteenServer.class.getCanonicalName());
+            LOGGER.info("Staring Jersey Server for {}", CashVerticle.class.getCanonicalName());
             jerseyServer.start();
         });
     }

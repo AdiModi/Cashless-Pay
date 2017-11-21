@@ -30,16 +30,22 @@ public class CookieGenerator {
         }
     }
 
+    public static void main(String[] args) {
+        CookieGenerator cookieGenerator = new CookieGenerator();
+        cookieGenerator.fetchIPv4Address();
+        cookieGenerator.fetchMACAddress();
+    }
+
     private CookieGenerator fetchIPv4Address() {
         IPv4Address = inetAddress.getAddress();
-        /*System.out.println(IPv4Address);*/
+        System.out.println(IPv4Address[0] + "." + IPv4Address[1] + "." + IPv4Address[2] + "." + IPv4Address[3]);
         return this;
     }
 
     private CookieGenerator fetchMACAddress() {
         try {
             MACAddress = networkInterface.getHardwareAddress();
-            /*System.out.println(MACAddress);*/
+            System.out.println(MACAddress[0]);
         } catch (SocketException e) {
             e.printStackTrace();
         }

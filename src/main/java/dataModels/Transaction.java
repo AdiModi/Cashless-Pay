@@ -1,17 +1,36 @@
 package dataModels;
 
+import dataModels.Time.Timestamp;
 import lombok.Getter;
-import lombok.Setter;
 
 public class Transaction {
 
     @Getter
-    @Setter
     private String transactionID;
     @Getter
-    @Setter
-    private String vendorName;
+    private String beneficiary;
     @Getter
-    @Setter
-    private String clientName;
+    private String benefactor;
+    @Getter
+    private Timestamp timestamp;
+
+    public Transaction setTransactionID(String transactionID) {
+        this.transactionID = transactionID;
+        return this;
+    }
+
+    public Transaction setBeneficiary(String beneficiary) {
+        this.beneficiary = beneficiary;
+        return this;
+    }
+
+    public Transaction setBenefactor(String benefactor) {
+        this.benefactor = benefactor;
+        return this;
+    }
+
+    public Transaction setTimestamp(Timestamp timestamp) {
+        this.timestamp = timestamp;
+        return this;
+    }
 }

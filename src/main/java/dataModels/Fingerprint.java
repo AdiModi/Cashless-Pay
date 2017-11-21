@@ -26,7 +26,7 @@ public class Fingerprint {
         this.booleanMap = booleanMap;
     }
 
-    public double matchRelative(Fingerprint fingerprint) {
+    public double generateScore(Fingerprint fingerprint) {
 
         double matchScore = 0;
         /*Fingerprint maching code here*/
@@ -34,7 +34,7 @@ public class Fingerprint {
         return matchScore;
     }
 
-    public boolean matchAbsolute(Fingerprint fingerprint) {
-        return (matchRelative(fingerprint) >= THRESHOLD);
+    public boolean match(Fingerprint fingerprint) {
+        return (generateScore(fingerprint) >= THRESHOLD);
     }
 }

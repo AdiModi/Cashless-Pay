@@ -1,6 +1,7 @@
 {
   "verticlesToDeploy": [
-    "pan.verticles.PanServer",
-    "itCanteen.verticles.ITCanteenServer"
+    "pan.verticles.PanVerticle",
+    "itCanteen.verticles.ITCanteenVerticle",
+    "cash.verticles.CashVerticle"
   ]
 }

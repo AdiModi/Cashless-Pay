@@ -1,0 +1,9 @@
+{
+  "jerseyConfig": {
+    "host": "localhost",
+    "port": 8083,
+    "packages": [
+      "itCanteen.resources"
+    ]
+  }
+}
